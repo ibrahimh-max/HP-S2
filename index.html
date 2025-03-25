@@ -8,6 +8,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Mobile menu animation */
+        .mobile-menu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .mobile-menu-open {
+            max-height: 500px;
+        }
+    </style>
 </head>
 <body class="bg-[#0a0a0a] text-white">
     <!-- Navigation -->
@@ -17,6 +28,13 @@
                 <div class="text-2xl font-bold space-font">
                     CodeWave Hub <span class="text-blue-500"></span>
                 </div>
+                
+                <!-- Mobile Menu Button (Hidden on desktop) -->
+                <button class="mobile-menu-btn md:hidden text-white text-2xl">
+                    <i class="bi bi-list"></i>
+                </button>
+                
+                <!-- Desktop Menu (Hidden on mobile) -->
                 <div class="hidden md:flex space-x-6">
                     <a href="speakers.html" class="hover:text-blue-500 transition">Speakers</a>
                     <a href="mentors.html" class="hover:text-blue-500 transition">Mentors & Judges</a>
@@ -26,10 +44,20 @@
                     <a href="contact.html" class="hover:text-blue-500 transition">Contact</a>
                 </div>
             </div>
+            
+            <!-- Mobile Menu (Hidden by default) -->
+            <div class="mobile-menu md:hidden bg-blue/90 rounded-lg mt-2">
+                <a href="speakers.html" class="block py-3 px-4 hover:bg-blue-700">Speakers</a>
+                <a href="mentors.html" class="block py-3 px-4 hover:bg-blue-700">Mentors & Judges</a>
+                <a href="agenda.html" class="block py-3 px-4 hover:bg-blue-700">Agenda</a>
+                <a href="prize.html" class="block py-3 px-4 hover:bg-blue-700">Prize</a>
+                <a href="Sponsers.html" class="block py-3 px-4 hover:bg-blue-700">Sponsors</a>
+                <a href="contact.html" class="block py-3 px-4 hover:bg-blue-700">Contact</a>
+            </div>
         </div>
     </nav>
 
-    <!-- Hero Section Only -->
+    <!-- Hero Section (EXACTLY as you had it) -->
     <section id="home" class="min-h-screen flex items-center justify-center pt-20">
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-2 gap-8 items-center">
@@ -59,5 +87,16 @@
     </section>
 
     <script src="js/script.js"></script>
+    <script>
+        // Mobile Menu Toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileBtn = document.querySelector('.mobile-menu-btn');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            
+            mobileBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('mobile-menu-open');
+            });
+        });
+    </script>
 </body>
 </html>
