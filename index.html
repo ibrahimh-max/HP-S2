@@ -49,25 +49,7 @@
             color: black !important;
         }
         
-        /* SLIDESHOW */
-        .slideshow-container {
-            position: relative;
-            height: 400px;
-            border-radius: 12px;
-            overflow: hidden;
-        }
-        .slide {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background-size: cover;
-            background-position: center;
-            opacity: 0;
-            transition: opacity 1s ease-in-out;
-        }
-        .slide.active {
-            opacity: 1;
-        }
+        
         
         /* SPACING ADDED (NO DESIGN CHANGES) */
         #agenda-section {
@@ -83,7 +65,7 @@
     margin-bottom: 2.5rem;
         }
 
-.header-logo img {
+        header-logo img {
     height: 500px; /* Maintain aspect ratio */
     width: 500px; /* Adjust this value to your preferred size */
     max-width: 100%; /* Ensure responsive */
@@ -96,42 +78,50 @@
     max-width: 100%; /* Ensure responsive */
 }
 
+
+
     </style>
 </head>
 <body>
     <!-- RED NAVBAR -->
-    <nav class="fixed w-full z-50">
-        <div class="container mx-auto px-4 py-3">
-            <div class="flex justify-between items-center">
-               <div class="CWH-logo">
-                    <img src="CWH.png" alt="CWH Logo">
-                </div> 
-                 
-                <button class="md:hidden text-2xl text-white mobile-menu-btn">
-                    <i class="bi bi-list"></i>
-                </button>
-                
-                <div class="hidden md:flex space-x-6">
-                    <a href="speakers.html" class="nav-link">Speakers</a>
-                    <a  class="nav-link">Mentors & Judges</a>
-                    <!-- <a href="#agenda-section" class="nav-link">Agenda</a> -->
-                    <a  class="nav-link">Prize</a>
-                    <!-- <a href="#sponsors-section" class="nav-link">Sponsors</a> -->
-                    <!-- <a href="contact.html" class="nav-link">Contact</a> -->
-                </div>
-            </div>
-            
-            <div class="mobile-menu md:hidden">
-              <a href="speakers.html" class="block py-3 px-4 border-b border-red-800">Speakers</a>
-              <a href="" class="block py-3 px-4 border-b border-red-800">Mentors & Judges</a>
-              <a href="" class="block py-3 px-4 border-b border-red-800">Prize</a>
-              <!-- <a href="#agenda-section" class="block py-3 px-4 border-b border-red-800">Agenda</a> -->
-              <!-- <a href="#sponsors-section" class="block py-3 px-4 border-b border-red-800">Sponsors</a> -->
-              <!-- <a href="contact.html" class="block py-3 px-4">Contact</a> -->
+    <nav class="fixed w-full z-50 bg-[#B60027]">
+      <div class="container mx-auto px-4 py-3">
+          <div class="flex justify-between items-center">
+              
+              <!-- Logo (respects .CWH-logo img CSS) -->
+              <div class="CWH-logo flex-shrink-0">
+                  <img src="CWH.png" alt="CWH Logo">
+              </div> 
+  
+              <!-- Hamburger for Mobile -->
+              <button class="md:hidden text-2xl text-white mobile-menu-btn">
+                  <i class="bi bi-list"></i>
+              </button>
+  
+              <!-- Desktop Navigation Links (no font override) -->
+              <div class="hidden md:flex space-x-6">
+                  <a href="speakers.html" class="nav-link text-white hover:text-gray-300">Speakers</a>
+                  <a class="nav-link text-white hover:text-gray-300">Mentors & Judges</a>
+                  <!-- <a href="#agenda-section" class="nav-link text-white hover:text-gray-300">Agenda</a> -->
+                  <a class="nav-link text-white hover:text-gray-300">Prize</a>
+                  <!-- <a href="#sponsors-section" class="nav-link text-white hover:text-gray-300">Sponsors</a> -->
+                  <!-- <a href="contact.html" class="nav-link text-white hover:text-gray-300">Contact</a> -->
+              </div>
           </div>
-          
-        </div>
-    </nav>
+  
+          <!-- Mobile Menu -->
+          <div class="mobile-menu md:hidden">
+              <a href="speakers.html" class="block py-3 px-4 border-b border-red-800 text-white">Speakers</a>
+              <a href="#" class="block py-3 px-4 border-b border-red-800 text-white">Mentors & Judges</a>
+              <a href="#" class="block py-3 px-4 border-b border-red-800 text-white">Prize</a>
+              <!-- <a href="#agenda-section" class="block py-3 px-4 border-b border-red-800 text-white">Agenda</a> -->
+              <!-- <a href="#sponsors-section" class="block py-3 px-4 border-b border-red-800 text-white">Sponsors</a> -->
+              <!-- <a href="contact.html" class="block py-3 px-4 text-white">Contact</a> -->
+          </div>
+      </div>
+  </nav>
+  
+  
 
     <section id="home" class="min-h-screen flex items-center justify-center pt-20">
         <div class="container mx-auto px-4">
@@ -230,29 +220,33 @@
               
 
    <!-- ===== SPONSORS SECTION ===== -->
-<section id="sponsors-section" class="text-center pb-[100px]"> 
+   <section id="sponsors-section" class="text-center pb-[100px]"> 
     <div class="container mx-auto px-4">
         <h1 class="text-5xl font-bold space-font mb-6">Sponsors</h1>
         <h2 class="text-2xl">Presented By CodeWave Hub</h2>
-        <div class="grid md:grid-cols-3 pt-20  gap-8">
+        <div class="grid md:grid-cols-3 pt-20 gap-8">
+            <!-- Sponsor 1 (Keep as-is) -->
             <div class="text-center">
-                <p class=" text-4xl /80">Title Partner</p>
+                <p class="text-4xl text-white/80">Title Partner</p>
                 <img src="LIET.png" alt="Sponsor 1" class="w-40 mx-auto">
-            
             </div>
+
+            <!-- Sponsor 2 (Enlarged) -->
             <div class="text-center">
-                <p class="text-white/80">Silver Partner</p>
-                <img src="sponsor2.jpg" alt="Sponsor 2" class="w-40 mx-auto">
-               
+              <p class="text-4xl text-white/80">Silver Partner</p>
+                <img src="ETHindia.png" alt="Sponsor 2" class="w-52 mx-auto"> <!-- w-52 = larger than w-40 -->
             </div>
+
+            <!-- Sponsor 3 (Enlarged) -->
             <div class="text-center">
-                <p class="text-white/80">Platfrom Partner</p>
-                <img src="sponsor3.jpg" alt="Sponsor 3" class="w-40 mx-auto">
-              
+              <p class="text-4xl text-white/80">Platform Partner</p>
+                <img src="Devfolio.png" alt="Sponsor 3" class="w-52 mx-auto"> <!-- w-52 = larger than w-40 -->
             </div>
         </div>
     </div>
 </section>
+
+
 
 <!-- ===== WHITE FOOTER ===== -->
 <footer class="bg-white text-gray-800 py-12">
