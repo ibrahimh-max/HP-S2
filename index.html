@@ -9,9 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         /* PERFECTED COLOR SCHEME */
-       :root {
-            --primary-red: #000000;
-        }
+        
         
         body {
             background: linear-gradient(135deg, #d4003b, #0d0d0d);
@@ -20,8 +18,9 @@
         
         /* RED NAVBAR WITH BLACK/WHITE TEXT */
         nav {
-            background: var(--primary-red) !important;
-            box-shadow: 0 2px 15px rgba(0,0,0,0.2);
+            background: linear-gradient(135deg, #d4003b, #0d0d0d);
+
+            box-shadow: 0 2px 15px rgba(0, 7, 3, 0.815);
         }
         .nav-logo {
             color: white !important;
@@ -81,8 +80,8 @@
         }
 
         .header-logo {
-    margin-bottom: 2.5rem; /* Same as original mb-6 */
-}
+    margin-bottom: 2.5rem;
+        }
 
 .header-logo img {
     height: 450px; /* Maintain aspect ratio */
@@ -93,7 +92,7 @@
 
 .CWH-logo img {
     height: 80px; /* Maintain aspect ratio */
-    width: 150px; /* Adjust this value to your preferred size */
+    width: 130px; /* Adjust this value to your preferred size */
     max-width: 100%; /* Ensure responsive */
 }
 
@@ -133,84 +132,117 @@
         </div>
     </nav>
 
-    <!-- HERO SECTION (UNCHANGED) -->
     <section id="home" class="min-h-screen flex items-center justify-center pt-20">
         <div class="container mx-auto px-4">
-          <div class="grid md:grid-cols-2 gap-9 items-center">
-            <div>
-              <h1 class="text-5xl md:text-7xl font-bold space-font mb-6">
-                HackPrix <br> <span class="text-white">Season 2</span>
-              </h1>
+          <div class="flex flex-col items-center text-center">
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold space-font mb-6">
+              HackPrix <br> <span class="text-white">Season 2</span>
+            </h1>
       
-              <section id="hero-btn">
-                <div class="flex flex-col md:flex-row gap-3 mb-4">
-                  <a href="https://discord.com/invite/kWLrH7vT" target="_blank">
-                    <button class="bg-white text-red-600 font-bold py-3 px-6 rounded-lg transition">
-                        Join Discord Channel
-                    </button>
-                  </a>
+            <section id="hero-btn">
+              <div class="flex flex-col md:flex-row gap-3 mb-4 justify-center">
+                <a href="https://discord.com/invite/kWLrH7vT" target="_blank">
+                  <button class="bg-white text-red-600 font-bold py-3 px-6 rounded-lg transition">
+                    Join Discord Channel
+                  </button>
+                </a>
       
-                  <a href="https://hackprix-2025.devfolio.co/overviewT" target="_blank">
-                    <button class="bg-white text-red-600 font-bold py-3 px-6 rounded-lg transition">
-                      Register with Devfolio
-                    </button>
-                  </a>
-                </div>
+                <a href="https://hackprix-2025.devfolio.co/overviewT" target="_blank">
+                  <button class="bg-white text-red-600 font-bold py-3 px-6 rounded-lg transition">
+                    Register with Devfolio
+                  </button>
+                </a>
+              </div>
       
-                <h3 class="mt-4 text-lg font-semibold">
-                  📍 Venue - <span class="text-white">Lords Institute of Engineering and Technology</span>
-                </h3>
-                <h3 class="mt-2 text-lg font-semibold">
-                  📅 Date - <span class="text-white">14-15th June 2025</span>
-                </h3>
-              </section>
+              <h3 class="mt-4 text-2xl font-semibold">
+                📍 Venue - <span class="text-white">Lords Institute of Engineering and Technology</span>
+              </h3>
+              <h3 class="mt-2 text-lg font-semibold">
+                📅 Date - <span class="text-white">14-15th June 2025</span>
+              </h3>
+            </section>
+          </div>
+        </div>
+      </section>
+      
+      
+                
+                
+       
+      <section id="faq" class="py-20 bg-#d4003b text-white">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center mb-12 space-grotesk">Frequently Asked Questions</h2>
+          <div class="max-w-3xl mx-auto space-y-4" id="faqContainer">
+            <div class="faq-item border-b pb-4">
+              <button class="faq-question flex justify-between items-center w-full text-left font-semibold text-lg">
+                <span>What is HackPrix?</span>
+                <span class="arrow transition-transform duration-300">&#9660;</span>
+              </button>
+              <div class="faq-answer mt-2 text-gray-300 hidden">
+                HackPrix is a 36-hour hackathon where students can collaborate, innovate, and build amazing projects.
+              </div>
+            </div>
+      
+            <div class="faq-item border-b pb-4">
+              <button class="faq-question flex justify-between items-center w-full text-left font-semibold text-lg">
+                <span>Who can participate?</span>
+                <span class="arrow transition-transform duration-300">&#9660;</span>
+              </button>
+              <div class="faq-answer mt-2 text-gray-300 hidden">
+                Any college student with a valid ID card can participate in HackPrix 2025.
+              </div>
+            </div>
+      
+            <div class="faq-item border-b pb-4">
+              <button class="faq-question flex justify-between items-center w-full text-left font-semibold text-lg">
+                <span>What’s the team size?</span>
+                <span class="arrow transition-transform duration-300">&#9660;</span>
+              </button>
+              <div class="faq-answer mt-2 text-gray-300 hidden">
+                Teams can have 2–4 members. Solo participation is also allowed.
+              </div>
+            </div>
+      
+            <div class="faq-item border-b pb-4">
+              <button class="faq-question flex justify-between items-center w-full text-left font-semibold text-lg">
+                <span>If your question isn’t listed, what’s your move?</span>
+                <span class="arrow transition-transform duration-300">&#9660;</span>
+              </button>
+              <div class="faq-answer mt-2 text-gray-300 hidden">
+                For assistance, reach out to us at Discord or email us at HackPrix@lords.ac.in
+              </div>
+            </div>
+      
+            <div class="faq-item border-b pb-4">
+              <button class="faq-question flex justify-between items-center w-full text-left font-semibold text-lg">
+                <span>Will food & stay be provided?</span>
+                <span class="arrow transition-transform duration-300">&#9660;</span>
+              </button>
+              <div class="faq-answer mt-2 text-gray-300 hidden">
+                We've got lots of food and snacks for everyone, stay hacky and hydrated. Rooms for resting/sleeping will be arranged at the Campus (separately for opposite genders).
+              </div>
             </div>
           </div>
         </div>
       </section>
       
-                
-                <!-- <div class="slideshow-container">
-                    <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
-                    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
-                </div> -->
-            </div>
-        </div>
-    </section>
-               
-                <!-- <div class="slideshow-container">
-                    <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
-                    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
-                    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
-                </div> -->
-            </div>
-        </div>
-    </section>
-
-    <!-- AGENDA SECTION (ORIGINAL DESIGN + SPACING)
-    <section id="agenda-section" class="text-center">
-        <div class="container mx-auto px-4">
-            <h1 class="text-5xl font-bold space-font mb-6">Agenda</h1>
-            <p class="max-w-3xl mx-auto text-lg text-white/90">
-                Here's the schedule for the event. Stay tuned for exciting sessions!
-            </p>
-            Your original agenda content goes here -->
-        </div>
-    </section> 
+              
 
    <!-- ===== SPONSORS SECTION ===== -->
-<section id="sponsors-section" class="text-center pb-[100px]"> <!-- Added bottom padding -->
+<section id="sponsors-section" class="text-center pb-[100px]"> 
     <div class="container mx-auto px-4">
         <h1 class="text-5xl font-bold space-font mb-6">Sponsors</h1>
         <h2 class="text-2xl">Presented By CodeWave Hub</h2>
         <div class="grid md:grid-cols-3 pt-20  gap-8">
             <div class="text-center">
-                <img src="LIET.png" alt="Sponsor 1" class="w-40 mx-auto">
                 <p class=" text-4xl /80">Title Partner</p>
+                <img src="LIET.png" alt="Sponsor 1" class="w-40 mx-auto">
+            
             </div>
             <div class="text-center">
-                <img src="sponsor2.jpg" alt="Sponsor 2" class="w-40 mx-auto">
                 <p class="text-white/80">Silver Partner</p>
+                <img src="sponsor2.jpg" alt="Sponsor 2" class="w-40 mx-auto">
+               
             </div>
             <div class="text-center">
                 <img src="sponsor3.jpg" alt="Sponsor 3" class="w-40 mx-auto">
@@ -227,7 +259,7 @@
             <!-- About Section -->
             <div class="md:col-span-2">
                 <h3 class="text-xl font-bold mb-4 text-black">CodeWave Hub</h3>
-                <p class="mb-4">Organizing India's most exciting hackathon since 2024.</p>
+                <p class="mb-4">Organizing India's most exciting hackathon since 2023.</p>
                 <div class="flex space-x-4">
                    
                     <a href="https://x.com/codewavehub" class="text-black hover:text-red-800"><i class="bi bi-twitter-x text-2xl"></i></a>
@@ -238,7 +270,7 @@
 
             <!-- Quick Links -->
             <div>
-                <h3 class="text-lg font-bold mb-4 text-white">
+                <h3 class="">
                 
             </div>
 
@@ -290,6 +322,19 @@
         
         setInterval(nextSlide, 5000);
     });
+    
+  const questions = document.querySelectorAll('.faq-question');
+  questions.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const answer = btn.nextElementSibling;
+      const isVisible = answer.style.display === 'block';
+      answer.style.display = isVisible ? 'none' : 'block';
+    });
+  });
+
+
+
+    
 </script>
 </body>
 </html>
