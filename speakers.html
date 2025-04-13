@@ -9,52 +9,59 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <style>
-        /* MAIN COLORS */
         body {
-            background: ##9a183c!important;
-            color: rgba(255,255,255,0.9) !important;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #d4003b, #0d0d0d);
+            color: white;
         }
-        
-        
+
+        .space-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
     </style>
 </head>
-<body class="bg-[#0a0a0a] text-white pt-20">
-    <section id="Pre-hackthon" class="py-16 text-center">
-        <div class="container mx-auto px-4">
-            <h1 class="text-5xl font-bold space-font mb-12">Pre-Hackathon Speakers</h1>
-            <div class="grid md:grid-cols-3 gap-8">
+<body class="text-white min-h-screen flex flex-col pt-20">
+
+    <section id="Pre-hackthon" class="flex-grow py-16 text-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl sm:text-5xl font-bold space-font mb-12">Pre-Hackathon Sessions</h1>
+            <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+                
                 <!-- Speaker 1 -->
-                <div class="bg-red-900 p-6 rounded-lg shadow-lg text-white">
+                <div class="bg-white p-6 rounded-lg shadow-lg text-gray-900">
                     <img src="speaker1.jpg" alt="Speaker 1" class="w-32 h-32 mx-auto rounded-full mb-4">
-                    <h2 class="text-2xl font-semibold">Bhawna Chauhan</h2>
-                    <p class="text-blue-400">Introduction To Firebase</p>
-                    <a href="https://www.linkedin.com/in/johndoe" target="_blank" class="text-blue-500 mt-2 inline-block">
+                    <h2 class="text-xl font-semibold">Bhawna Chauhan</h2>
+                    <p class="text-blue-500">Introduction To Firebase</p>
+                    <a href="https://www.linkedin.com/in/johndoe" target="_blank" class="text-blue-600 mt-2 inline-block">
                         <i class="bi bi-linkedin text-2xl"></i>
                     </a>
                 </div>
 
                 <!-- Speaker 2 -->
-                <div class="bg-red-900 p-6 rounded-lg shadow-lg text-white">
+                <div class="bg-white p-6 rounded-lg shadow-lg text-gray-900">
                     <img src="speaker2.jpg" alt="Speaker 2" class="w-32 h-32 mx-auto rounded-full mb-4">
-                    <h2 class="text-2xl font-semibold">Reda Kaleem</h2>
-                    <p class="text-blue-400">Introduction to Web Dev</p>
-                    <a href="https://www.linkedin.com/in/janesmith" target="_blank" class="text-blue-500 mt-2 inline-block">
+                    <h2 class="text-xl font-semibold">Reda Kaleem</h2>
+                    <p class="text-blue-500">Introduction to Web Dev</p>
+                    <a href="https://www.linkedin.com/in/janesmith" target="_blank" class="text-blue-600 mt-2 inline-block">
                         <i class="bi bi-linkedin text-2xl"></i>
                     </a>
                 </div>
 
                 <!-- Speaker 3 -->
-                <div class="bg-red-900 p-6 rounded-lg shadow-lg text-white">
+                <div class="bg-white p-6 rounded-lg shadow-lg text-gray-900">
                     <img src="speaker3.jpg" alt="Speaker 3" class="w-32 h-32 mx-auto rounded-full mb-4">
-                    <h2 class="text-2xl font-semibold">Afnan Abdul Vasay</h2>
-                    <p class="text-blue-400">Github Essentials</p>
-                    <a href="https://www.linkedin.com/in/davidlee" target="_blank" class="text-blue-500 mt-2 inline-block">
+                    <h2 class="text-xl font-semibold">Afnan Abdul Vasay</h2>
+                    <p class="text-blue-500">GitHub Essentials</p>
+                    <a href="https://www.linkedin.com/in/davidlee" target="_blank" class="text-blue-600 mt-2 inline-block">
                         <i class="bi bi-linkedin text-2xl"></i>
                     </a>
                 </div>
+
             </div>
         </div>
     </section>
+
     <script src="js/script.js"></script>
 </body>
 </html>
+
