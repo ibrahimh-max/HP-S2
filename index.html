@@ -29,7 +29,7 @@
             color: white !important;
         }
         .nav-link:hover {
-            color: black !important;
+            color: #d4003b !important;
         }
         
         /* MOBILE MENU */
@@ -46,7 +46,7 @@
             color: white !important;
         }
         .mobile-menu a:hover {
-            color: black !important;
+            color: #d4003b !important;
         }
         
         
@@ -100,10 +100,10 @@
   
               <!-- Desktop Navigation Links (no font override) -->
               <div class="hidden md:flex space-x-6">
-                  <a href="speakers.html" class="nav-link text-white hover:text-gray-300">Speakers</a>
-                  <a class="nav-link text-white hover:text-gray-300">Mentors & Judges</a>
+                  <a href="speakers.html" class="nav-link text-white">Speakers</a>
+                  <a class="nav-link text-white">Mentors & Judges</a>
                   <!-- <a href="#agenda-section" class="nav-link text-white hover:text-gray-300">Agenda</a> -->
-                  <a class="nav-link text-white hover:text-gray-300">Prize</a>
+                  <a class="nav-link text-white">Prize</a>
                   <!-- <a href="#sponsors-section" class="nav-link text-white hover:text-gray-300">Sponsors</a> -->
                   <!-- <a href="contact.html" class="nav-link text-white hover:text-gray-300">Contact</a> -->
               </div>
@@ -133,17 +133,19 @@
             <section id="hero-btn">
               <div class="flex flex-col md:flex-row gap-3 mb-4 justify-center">
                 <a href="https://discord.gg/Qh2MJj3AwB" target="_blank">
-                  <button class="bg-white text-red-600 font-bold py-3 px-6 rounded-lg transition">
+                  <button class="bg-white text-red-600 font-bold py-3 px-6 rounded-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-lg">
                     Join Discord Channel
                   </button>
                 </a>
-      
+              
                 <a href="https://hackprix-2025.devfolio.co/" target="_blank">
-                  <button class="bg-white text-red-600 font-bold py-3 px-6 rounded-lg transition">
+                  <button class="bg-white text-red-600 font-bold py-3 px-6 rounded-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-lg">
                     Register with Devfolio
                   </button>
                 </a>
               </div>
+              
+              
       
               <h3 class="mt-4 text-2xl font-semibold">
                 📍 Venue - <span class="text-white">Lords Institute of Engineering and Technology</span>
@@ -156,6 +158,39 @@
         </div>
       </section>
       
+
+
+       <!-- ===== SPONSORS SECTION ===== -->
+   <section id="sponsors-section" class="text-center pb-[100px]"> 
+    <div class="container mx-auto px-4">
+        <h1 class="text-5xl font-bold space-font mb-6">Sponsors</h1>
+        <div class="text-center">
+          <p class="text-4xl text-white/80">Presented By</p>
+          <img src="CWH Sp.png" alt="CodeWave Hub Logo" class="mx-auto h-[250px] w-auto object-contain">
+
+      </div>
+      
+        <div class="grid md:grid-cols-3 pt-20 gap-8">
+            <!-- Sponsor 1 (Keep as-is) -->
+            <div class="text-center">
+                <p class="text-4xl text-white/80">Title Partner</p>
+                <img src="LIET.png" alt="Sponsor 1" class="w-40 mx-auto">
+            </div>
+
+            <!-- Sponsor 2 (Enlarged) -->
+            <div class="text-center">
+              <p class="text-4xl text-white/80">Silver Partner</p>
+                <img src="ETHindia.png" alt="Sponsor 2" class="w-52 mx-auto"> <!-- w-52 = larger than w-40 -->
+            </div>
+
+            <!-- Sponsor 3 (Enlarged) -->
+            <div class="text-center">
+              <p class="text-4xl text-white/80">Platform Partner</p>
+                <img src="Devfolio.png" alt="Sponsor 3" class="w-52 mx-auto"> <!-- w-52 = larger than w-40 -->
+            </div>
+        </div>
+    </div>
+</section>
       
                 
                 
@@ -216,35 +251,6 @@
           </div>
         </div>
       </section>
-      
-              
-
-   <!-- ===== SPONSORS SECTION ===== -->
-   <section id="sponsors-section" class="text-center pb-[100px]"> 
-    <div class="container mx-auto px-4">
-        <h1 class="text-5xl font-bold space-font mb-6">Sponsors</h1>
-        <h2 class="text-2xl">Presented By CodeWave Hub</h2>
-        <div class="grid md:grid-cols-3 pt-20 gap-8">
-            <!-- Sponsor 1 (Keep as-is) -->
-            <div class="text-center">
-                <p class="text-4xl text-white/80">Title Partner</p>
-                <img src="LIET.png" alt="Sponsor 1" class="w-40 mx-auto">
-            </div>
-
-            <!-- Sponsor 2 (Enlarged) -->
-            <div class="text-center">
-              <p class="text-4xl text-white/80">Silver Partner</p>
-                <img src="ETHindia.png" alt="Sponsor 2" class="w-52 mx-auto"> <!-- w-52 = larger than w-40 -->
-            </div>
-
-            <!-- Sponsor 3 (Enlarged) -->
-            <div class="text-center">
-              <p class="text-4xl text-white/80">Platform Partner</p>
-                <img src="Devfolio.png" alt="Sponsor 3" class="w-52 mx-auto"> <!-- w-52 = larger than w-40 -->
-            </div>
-        </div>
-    </div>
-</section>
 
 
 
@@ -255,7 +261,7 @@
             <!-- About Section -->
             <div class="md:col-span-2">
                 <h3 class="text-xl font-bold mb-4 text-black">CodeWave Hub</h3>
-                <p class="mb-4">Organizing India's most exciting hackathon since 2023.</p>
+                <p class="mb-4">Organizing India's most exciting hackathon since 2024.</p>
                 <div class="flex space-x-4">
                    
                     <a href="https://x.com/codewavehub" class="text-black hover:text-red-800"><i class="bi bi-twitter-x text-2xl"></i></a>
